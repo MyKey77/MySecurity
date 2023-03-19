@@ -1,9 +1,9 @@
 package com.example.mysecurity.Controller;
 
 
-import com.example.mysecurity.Auth.UserService;
-import com.example.mysecurity.Model.Game_User;
-import com.example.mysecurity.Model.User_Repository;
+import com.example.mysecurity.Security_model.UserService;
+import com.example.mysecurity.Model_Database.Game_User;
+import com.example.mysecurity.Model_Database.User_Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;

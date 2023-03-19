@@ -1,7 +1,7 @@
-package com.example.mysecurity.Auth;
+package com.example.mysecurity.Security_model;
 
 
-import com.example.mysecurity.Model.User_Repository;
+import com.example.mysecurity.Model_Database.User_Repository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetails;
