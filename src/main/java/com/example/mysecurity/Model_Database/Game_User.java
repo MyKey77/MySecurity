@@ -20,7 +20,6 @@ public class Game_User implements UserDetails {
 
     @Getter
     @Setter
-
     private String name;
 
     @Setter
