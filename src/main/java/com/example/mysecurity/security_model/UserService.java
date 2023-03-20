@@ -1,7 +1,7 @@
-package com.example.mysecurity.Security_model;
+package com.example.mysecurity.security_model;
 
 
-import com.example.mysecurity.Model_Database.User_Repository;
+import com.example.mysecurity.model_database.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService implements UserDetailsService {
     private final static String USER_NOT_FOUND_NM = "user with name %s not found";
-    private final User_Repository user_Repository;
+    private final UserRepository user_Repository;
 
-    public UserService(User_Repository user_Repository) {
+    public UserService(UserRepository user_Repository) {
         this.user_Repository = user_Repository;
     }
 

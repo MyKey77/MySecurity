@@ -1,4 +1,4 @@
-package com.example.mysecurity.Controller_DB_SC;
+package com.example.mysecurity.controllerDbSc;
 
 
 import lombok.Getter;

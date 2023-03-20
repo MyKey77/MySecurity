@@ -1,4 +1,4 @@
-package com.example.mysecurity.Model_Database;
+package com.example.mysecurity.model_database;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import java.util.Collections;
 
 @Entity
 @Table(name = "game_user")
-public class Game_User implements UserDetails {
+public class GameUser implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

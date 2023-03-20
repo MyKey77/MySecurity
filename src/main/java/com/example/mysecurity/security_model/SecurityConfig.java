@@ -1,4 +1,4 @@
-package com.example.mysecurity.Security_model;
+package com.example.mysecurity.security_model;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

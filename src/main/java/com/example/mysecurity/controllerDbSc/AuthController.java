@@ -1,9 +1,9 @@
-package com.example.mysecurity.Controller_DB_SC;
+package com.example.mysecurity.controllerDbSc;
 
 
-import com.example.mysecurity.Security_model.UserService;
-import com.example.mysecurity.Model_Database.Game_User;
-import com.example.mysecurity.Model_Database.User_Repository;
+import com.example.mysecurity.security_model.UserService;
+import com.example.mysecurity.model_database.GameUser;
+import com.example.mysecurity.model_database.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class Auth_Controller {
+public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    private User_Repository user_repository;
+    private UserRepository user_repository;
 
     @Autowired
     private UserService userService;
@@ -46,7 +46,7 @@ public class Auth_Controller {
             return "reg-form";
         }
 
-        Game_User nu = new Game_User();
+        GameUser nu = new GameUser();
 
         nu.setName(reg.getName());
         nu.setPassword(passwordEncoder.encode(reg.getPassword()));

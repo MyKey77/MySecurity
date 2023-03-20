@@ -1,11 +1,11 @@
-package com.example.mysecurity.Controller_DB_SC;
+package com.example.mysecurity.controllerDbSc;
 
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Controller_goals {
+public class ControllerGoals {
     @GetMapping(path = {"/","/testing"})
     public String homepage(){return "testing";}
 
