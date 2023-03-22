@@ -1,4 +1,4 @@
-package com.example.mysecurity.model_database;
+package com.example.mysecurity.model.database;
 
 import jakarta.persistence.*;
 import lombok.Getter;

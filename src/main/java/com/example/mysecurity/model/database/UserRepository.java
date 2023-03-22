@@ -1,4 +1,4 @@
-package com.example.mysecurity.model_database;
+package com.example.mysecurity.model.database;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
