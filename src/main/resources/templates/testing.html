@@ -21,6 +21,14 @@
     <a href="/registration">
         <p>Regisztracio</p>
     </a>
+
+
+</div>
+
+<div data-sec-authorize="isAnonymous()">
+    <ul>
+        <li th:each="user : ${id}" th:text="${id.name}"></li>
+    </ul>
 </div>
 </body>
 </html>
